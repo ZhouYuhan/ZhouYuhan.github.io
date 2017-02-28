@@ -1,0 +1,1224 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="RN,组件," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Lion_Liu" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Flex 布局:
+flexDirection
+
+alignItems
+
+justifyContent
+
+ActivityIndicator:
+animating
+
+color
+
+size (small, large)  Android 情况下可以输入 number
+hidesWhenStopped (iOS，当停止时，是否隐藏，默认是true)
+
+Button:
+color
+
+disable">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记React Native 组件">
+<meta property="og:url" content="http://lionwy.github.io/记React-Native-组件/index.html">
+<meta property="og:site_name" content="Lion_Liu">
+<meta property="og:description" content="Flex 布局:
+flexDirection
+
+alignItems
+
+justifyContent
+
+ActivityIndicator:
+animating
+
+color
+
+size (small, large)  Android 情况下可以输入 number
+hidesWhenStopped (iOS，当停止时，是否隐藏，默认是true)
+
+Button:
+color
+
+disable">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1929911-4155623a1eb9a829.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-12-14T08:49:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="记React Native 组件">
+<meta name="twitter:description" content="Flex 布局:
+flexDirection
+
+alignItems
+
+justifyContent
+
+ActivityIndicator:
+animating
+
+color
+
+size (small, large)  Android 情况下可以输入 number
+hidesWhenStopped (iOS，当停止时，是否隐藏，默认是true)
+
+Button:
+color
+
+disable">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1929911-4155623a1eb9a829.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Lion'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://lionwy.github.io/记React-Native-组件/"/>
+
+  <title> 记React Native 组件 | Lion_Liu </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Lion_Liu</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">一名专业的iOS程序猿</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                记React Native 组件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-28T10:48:49+08:00" content="2016-11-28">
+              2016-11-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/react-native/" itemprop="url" rel="index">
+                    <span itemprop="name">react native</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/记React-Native-组件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="记React-Native-组件/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/记React-Native-组件/" class="leancloud_visitors" data-flag-title="记React Native 组件">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">热度 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/1929911-4155623a1eb9a829.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="茫茫多"></p>
+<h2 id="Flex-布局"><a href="#Flex-布局" class="headerlink" title="Flex 布局:"></a>Flex 布局:</h2><ol>
+<li><p><code>flexDirection</code></p>
+</li>
+<li><p><code>alignItems</code></p>
+</li>
+<li><code>justifyContent</code></li>
+</ol>
+<h2 id="ActivityIndicator"><a href="#ActivityIndicator" class="headerlink" title="ActivityIndicator:"></a>ActivityIndicator:</h2><ol>
+<li><p><code>animating</code></p>
+</li>
+<li><p><code>color</code></p>
+</li>
+<li><code>size</code> (small, large)  Android 情况下可以输入 number</li>
+<li><code>hidesWhenStopped</code> (iOS，当停止时，是否隐藏，默认是true)</li>
+</ol>
+<h2 id="Button"><a href="#Button" class="headerlink" title="Button:"></a>Button:</h2><ol>
+<li><p><code>color</code></p>
+</li>
+<li><p><code>disable</code></p>
+</li>
+<li><code>title</code></li>
+</ol>
+<ul>
+<li><code>onPress</code></li>
+</ul>
+<h2 id="DatePickerIOS"><a href="#DatePickerIOS" class="headerlink" title="DatePickerIOS:"></a>DatePickerIOS:</h2><ol>
+<li><p><code>date</code></p>
+</li>
+<li><p><code>maximumDate</code></p>
+</li>
+<li><code>minimumDate</code></li>
+<li><code>minuteInterval</code>(分钟单位， 1，2，3，4，5，6，10，12，15，20，30)</li>
+<li><code>mode</code>（date, time, datetime）</li>
+<li><code>timeZoneOffsetInMinutes</code></li>
+</ol>
+<ul>
+<li><code>onDateChange</code></li>
+</ul>
+<h2 id="Text"><a href="#Text" class="headerlink" title="Text:"></a>Text:</h2><ol>
+<li><p><code>numberOfLines</code> </p>
+</li>
+<li><p><code>onPress</code></p>
+</li>
+<li><code>textAlign</code></li>
+<li>后续的样式会覆盖之前的样式</li>
+</ol>
+<h2 id="TextInput"><a href="#TextInput" class="headerlink" title="TextInput:"></a>TextInput:</h2><ol>
+<li><p><code>autoCapitalize</code>  转换大写</p>
+<ul>
+<li>characters 所有字符</li>
+<li>words 每个单词的首字符</li>
+<li>sentences 每句话的首字符</li>
+<li>none</li>
+</ul>
+</li>
+<li><p><code>autoCorrect</code> 拼写自动修正</p>
+</li>
+<li><p><code>autoFocus</code> 自动响应</p>
+</li>
+<li><p><code>defaultValue</code></p>
+</li>
+<li><code>editable</code></li>
+<li><code>keyboardType</code></li>
+<li><code>maxLength</code></li>
+<li><code>multiline</code></li>
+<li><code>placeholder</code></li>
+<li><code>placeholderTextColor</code></li>
+<li><code>secureTextEntry</code></li>
+<li><code>value</code></li>
+<li><p><code>clearButtonMode</code> (iOS)</p>
+<ul>
+<li>never</li>
+<li>while-editing</li>
+<li>unless-editing</li>
+<li>always</li>
+</ul>
+</li>
+<li><p><code>keyboardAppearance</code>(iOS)</p>
+<ul>
+<li>default/light/dark</li>
+</ul>
+</li>
+<li><p><code>returnKeyType</code> </p>
+</li>
+</ol>
+<ul>
+<li><code>onChange</code></li>
+<li><code>onChangeText</code></li>
+<li><code>onEndEditing</code>    </li>
+<li><code>onSubmitEditing</code></li>
+</ul>
+<h2 id="ListView"><a href="#ListView" class="headerlink" title="ListView:"></a>ListView:</h2><ul>
+<li><p><code>dataSource</code> </p>
+</li>
+<li><p><code>renderRow</code></p>
+</li>
+</ul>
+<h2 id="Navigator"><a href="#Navigator" class="headerlink" title="Navigator:"></a>Navigator:</h2><ul>
+<li><code>initialRoute</code><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">initialRoute=&#123;&#123;</div><div class="line">    		title: <span class="string">'导航'</span>,</div><div class="line">        	<span class="built_in">index</span>: <span class="number">0</span>,</div><div class="line">     		componen<span class="variable">t:</span> MainView /*导航器的视图页面*/</div><div class="line">     		param<span class="variable">s:</span> &#123;</div><div class="line">     		</div><div class="line">     		&#125;</div><div class="line"></div><div class="line">     &#125;&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><code>renderScene</code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">renderScene=&#123;(route, navigator) =&gt; &#123;</div><div class="line">        	<span class="keyword">let</span> Component = route.component;</div><div class="line">        	<span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">Component</span></span></span></div><div class="line">                 &#123;<span class="attr">...route.params</span>&#125;</div><div class="line">                 <span class="attr">navigator</span>=<span class="string">&#123;navigator&#125;</span></div><div class="line">		/&gt;</div><div class="line"></div><div class="line">	&#125;&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="NavigatorIOS："><a href="#NavigatorIOS：" class="headerlink" title="NavigatorIOS："></a>NavigatorIOS：</h2><ol>
+<li><p><code>initialRoute</code></p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> <span class="string">component:</span></div><div class="line"><span class="number">2.</span> <span class="string">title:</span></div><div class="line"><span class="number">3.</span> <span class="string">titleImage:</span> require(<span class="string">'./img/icon1.png'</span>)</div><div class="line"><span class="number">4.</span> <span class="string">passProps:</span>参数传递，跟上面区分</div><div class="line"><span class="number">5.</span> <span class="string">backButtonTitle:</span></div><div class="line"><span class="number">6.</span> <span class="string">backButtonIcon:</span> </div><div class="line"><span class="number">7.</span> <span class="string">leftButtonTitle:</span></div><div class="line"><span class="number">8.</span> <span class="string">onLeftButtonPress:</span></div><div class="line"><span class="number">9.</span> <span class="string">navigationBarHidden:</span></div><div class="line"><span class="number">10.</span> <span class="string">shadowHidden:</span></div><div class="line"><span class="number">11.</span> <span class="string">tintColor:</span></div><div class="line"><span class="number">12.</span> <span class="string">titleTextColor:</span></div><div class="line"><span class="number">13.</span> <span class="string">translucent:</span></div><div class="line"></div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="symbol">	leftButtonTitle:</span> <span class="string">'back'</span>,</div><div class="line"><span class="symbol">	rightButtonIcon:</span> (require(<span class="string">'./img/left.png'</span>)),</div><div class="line"><span class="symbol">	onLeftButtonPress:</span> ()=&gt;&#123;</div><div class="line">	     <span class="keyword">this</span>.props.navigator.pop()</div><div class="line">	 &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>interactivePopGestureEnabled</code></p>
+</li>
+<li><code>navigationBarHidden</code>:</li>
+<li><code>shadowHidden</code>:</li>
+<li><code>tintColor</code>:</li>
+<li><code>titleTextColor</code>:</li>
+<li><code>translucent</code>:</li>
+</ol>
+<ul>
+<li>push(route)</li>
+<li>popN(number)</li>
+<li>pop()</li>
+<li>popToTop()</li>
+</ul>
+<h2 id="state"><a href="#state" class="headerlink" title="state:"></a>state:</h2><ul>
+<li><p><code>this.state = { };</code></p>
+</li>
+<li><p><code>this.setState({});</code></p>
+</li>
+</ul>
+<h2 id="Image"><a href="#Image" class="headerlink" title="Image:"></a>Image:</h2><ol>
+<li><p><code>resizeMode</code>：</p>
+<ul>
+<li>cover(覆盖容器)</li>
+<li>contain（适合容器）</li>
+<li>stretch（充满）</li>
+</ul>
+</li>
+<li><p><code>source</code>:</p>
+<ul>
+<li><p>使用静态图片时，不需要指定大小style</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Image <span class="keyword">source</span> = &#123;<span class="keyword">require</span>(<span class="string">'./icon.png'</span>)&#125; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>js 使用app中的图片资源需要设置大小style</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Image source=&#123;&#123;uri: <span class="string">'app_icon'</span>&#125;&#125; style=&#123;&#123;width: <span class="number">40</span>, height: <span class="number">40</span>&#125;&#125; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>网络图片同上，也需要设置size</p>
+</li>
+</ul>
+</li>
+<li><p><code>defaultSource</code>， iOS上的placeholder </p>
+</li>
+<li><p><code>onProgress</code> iOS 监听下载进度</p>
+</li>
+</ol>
+<h2 id="TabBarIOS"><a href="#TabBarIOS" class="headerlink" title="TabBarIOS:"></a>TabBarIOS:</h2><ol>
+<li><p><code>barTintColor</code> bar背景</p>
+</li>
+<li><p><code>tintColor</code> 标签被选中之后的颜色</p>
+</li>
+<li><code>unselectedTintColor</code> 标签未选中的颜色(待定)</li>
+<li><code>translucent</code> 是否半透明化</li>
+</ol>
+<h3 id="TabBarIOS-Item"><a href="#TabBarIOS-Item" class="headerlink" title="TabBarIOS.Item:"></a>TabBarIOS.Item:</h3><ol>
+<li><p><code>badge</code> </p>
+</li>
+<li><p><code>title</code></p>
+</li>
+<li><p><code>renderAsOriginal</code> 配合icon使用</p>
+</li>
+<li><code>selectedIcon</code></li>
+<li><code>icon</code> 图标，当设置<code>systemIcon</code>时，<code>icon</code>无效果</li>
+<li><code>systemIcon</code> (‘bookmarks’, ‘contacts’, ‘downloads’, ‘favorites’, ‘featured’, ‘history’, ‘more’, ‘most-recent’, ‘most-viewed’, ‘recents’, ‘search’, ‘top-rated’)</li>
+<li><p><code>selected</code> 当前标签选中状态，</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">selected=&#123;this.<span class="keyword">state</span>.selectedTab === '当前tab'&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>onPress</code> </p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;TabBarIOS.Item</div><div class="line">     icon=&#123;<span class="built_in">require</span>(<span class="string">'./img/icon2.png'</span>)&#125;</div><div class="line">     selectedIcon=&#123;<span class="built_in">require</span>(<span class="string">'./img/icon3.png'</span>)&#125;</div><div class="line">     renderAsOriginal</div><div class="line">     title=<span class="string">'More'</span></div><div class="line">     selected=&#123;<span class="keyword">this</span>.state.selectedTab === <span class="string">'greenTab'</span>&#125;</div><div class="line">     onPress=&#123;()=&gt;&#123;</div><div class="line">         <span class="keyword">this</span>.setState(&#123;</div><div class="line">             selectedTab: <span class="string">'greenTab'</span>,</div><div class="line">             presses: <span class="keyword">this</span>.state.presses + <span class="number">1</span></div><div class="line">         &#125;);</div><div class="line">     &#125;&#125; &gt;</div><div class="line"> <span class="xml"><span class="tag">&lt;/<span class="name">TabBarIOS.Item</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<p><a href="https://github.com/LionWY/React-Native-Test" target="_blank" rel="external">Test地址</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/RN/" rel="tag">#RN</a>
+          
+            <a href="/tags/组件/" rel="tag">#组件</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/坎坷的RN之路/" rel="next" title="坎坷的RN之路">
+                <i class="fa fa-chevron-left"></i> 坎坷的RN之路
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/React-Native-API/" rel="prev" title="React Native API">
+                React Native API <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="记React-Native-组件/"
+           data-title="记React Native 组件" data-url="http://lionwy.github.io/记React-Native-组件/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://oc164vmyr.bkt.clouddn.com/16-8-17/94370674.jpg"
+               alt="Lion_Liu" />
+          <p class="site-author-name" itemprop="name">Lion_Liu</p>
+          <p class="site-description motion-element" itemprop="description">学而时习之，温故而知新。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/LionWY" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1897101841/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/7f5c3fe78dc7/latest_articles" target="_blank" title="Jianshu">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  Jianshu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Flex-布局"><span class="nav-text">Flex 布局:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ActivityIndicator"><span class="nav-text">ActivityIndicator:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Button"><span class="nav-text">Button:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DatePickerIOS"><span class="nav-text">DatePickerIOS:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Text"><span class="nav-text">Text:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TextInput"><span class="nav-text">TextInput:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ListView"><span class="nav-text">ListView:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Navigator"><span class="nav-text">Navigator:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NavigatorIOS："><span class="nav-text">NavigatorIOS：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#state"><span class="nav-text">state:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image"><span class="nav-text">Image:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TabBarIOS"><span class="nav-text">TabBarIOS:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TabBarIOS-Item"><span class="nav-text">TabBarIOS.Item:</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lion_Liu</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lion-liu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("6Q4uagm9w9gGiumDdQ8CIYQB-gzGzoHsz", "XcDkKeNKrUKEzd9vD778hsIE");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            // $visitors.find(COUNT_CONTAINER_REF).text(0);
+            $visitors.find(COUNT_CONTAINER_REF).text(0+"°C");
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            // $(element).find(COUNT_CONTAINER_REF).text(time);
+            $(element).find(COUNT_CONTAINER_REF).text(time+"°C");
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              // countSpan.text(0);
+              countSpan.text(0+"°C");
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                // $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                $element.find('.leancloud-visitors-count').text(counter.get('time')+"°C");
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                // $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time')+"°C");
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+  <!-- <script type="text/javascript" src="/js/src/test.js"></script> -->
+
+</body>
+</html>

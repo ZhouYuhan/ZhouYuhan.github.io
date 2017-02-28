@@ -1,0 +1,1100 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="读书学习,OC原理," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Lion_Liu" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Effective Objective-C 这本书只要认真看了的都会明白里面的东西有多重要
+
+
+目前正在看第二遍，顺便写下自己的读书笔记，起个记录和提醒的作用，内容主要是简单总结，很少有例子，如果不清楚的，强烈建议看原书。当然对于电子书爱好者，这里分享下电子书版本。
+
+
+第一章 熟悉Objective-C
+OC是在C语言的基础上添加了面向对象特性
+
+1、Objective-C的起源、本质
+2、@">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记录Effective Objective-C 2.0 笔记目录">
+<meta property="og:url" content="http://lionwy.github.io/记录Effective Objective-C 2.0 笔记/index.html">
+<meta property="og:site_name" content="Lion_Liu">
+<meta property="og:description" content="Effective Objective-C 这本书只要认真看了的都会明白里面的东西有多重要
+
+
+目前正在看第二遍，顺便写下自己的读书笔记，起个记录和提醒的作用，内容主要是简单总结，很少有例子，如果不清楚的，强烈建议看原书。当然对于电子书爱好者，这里分享下电子书版本。
+
+
+第一章 熟悉Objective-C
+OC是在C语言的基础上添加了面向对象特性
+
+1、Objective-C的起源、本质
+2、@">
+<meta property="og:image" content="http://oeb4c30x3.bkt.clouddn.com/download.jpg">
+<meta property="og:updated_time" content="2016-10-11T09:40:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="记录Effective Objective-C 2.0 笔记目录">
+<meta name="twitter:description" content="Effective Objective-C 这本书只要认真看了的都会明白里面的东西有多重要
+
+
+目前正在看第二遍，顺便写下自己的读书笔记，起个记录和提醒的作用，内容主要是简单总结，很少有例子，如果不清楚的，强烈建议看原书。当然对于电子书爱好者，这里分享下电子书版本。
+
+
+第一章 熟悉Objective-C
+OC是在C语言的基础上添加了面向对象特性
+
+1、Objective-C的起源、本质
+2、@">
+<meta name="twitter:image" content="http://oeb4c30x3.bkt.clouddn.com/download.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Lion'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://lionwy.github.io/记录Effective Objective-C 2.0 笔记/"/>
+
+  <title> 记录Effective Objective-C 2.0 笔记目录 | Lion_Liu </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Lion_Liu</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">一名专业的iOS程序猿</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                记录Effective Objective-C 2.0 笔记目录
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-11T17:04:50+08:00" content="2016-10-11">
+              2016-10-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/书架/" itemprop="url" rel="index">
+                    <span itemprop="name">书架</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/记录Effective Objective-C 2.0 笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="记录Effective Objective-C 2.0 笔记/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/记录Effective Objective-C 2.0 笔记/" class="leancloud_visitors" data-flag-title="记录Effective Objective-C 2.0 笔记目录">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">热度 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>Effective Objective-C 这本书只要认真看了的都会明白里面的东西有多重要</p>
+</blockquote>
+<ul>
+<li>目前正在看第二遍，顺便写下自己的读书笔记，起个记录和提醒的作用，内容主要是简单总结，很少有例子，如果不清楚的，强烈建议看原书。当然对于电子书爱好者，<a href="https://pan.baidu.com/s/1gePb0Uv" target="_blank" rel="external">这里</a>分享下电子书版本。</li>
+</ul>
+<p><img src="http://oeb4c30x3.bkt.clouddn.com/download.jpg" alt=""></p>
+<h1 id="第一章-熟悉Objective-C"><a href="#第一章-熟悉Objective-C" class="headerlink" title="第一章 熟悉Objective-C"></a>第一章 熟悉Objective-C</h1><blockquote>
+<p>OC是在C语言的基础上添加了面向对象特性</p>
+</blockquote>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/1.%E4%BA%86%E8%A7%A3Objective-C%E8%AF%AD%E8%A8%80%E7%9A%84%E8%B5%B7%E6%BA%90.md#%E4%BA%86%E8%A7%A3objective-c%E8%AF%AD%E8%A8%80%E7%9A%84%E8%B5%B7%E6%BA%90" target="_blank" rel="external">1、Objective-C的起源、本质</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/2.%E5%9C%A8%E7%B1%BB%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6%E4%B8%AD%E5%B0%BD%E9%87%8F%E5%B0%91%E5%BC%95%E5%85%A5%E5%85%B6%E4%BB%96%E5%A4%B4%E6%96%87%E4%BB%B6.md#%E5%9C%A8%E7%B1%BB%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6%E4%B8%AD%E5%B0%BD%E9%87%8F%E5%B0%91%E5%BC%95%E5%85%A5%E5%85%B6%E4%BB%96%E5%A4%B4%E6%96%87%E4%BB%B6" target="_blank" rel="external">2、@class or import</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/3.%E5%A4%9A%E7%94%A8%E5%AD%97%E9%9D%A2%E9%87%8F%E8%AF%AD%E6%B3%95%EF%BC%8C%E5%B0%91%E7%94%A8%E4%B8%8E%E4%B9%8B%E7%AD%89%E4%BB%B7%E7%9A%84%E6%96%B9%E6%B3%95.md#%E5%A4%9A%E7%94%A8%E5%AD%97%E9%9D%A2%E9%87%8F%E8%AF%AD%E6%B3%95%E5%B0%91%E7%94%A8%E4%B8%8E%E4%B9%8B%E7%AD%89%E4%BB%B7%E7%9A%84%E6%96%B9%E6%B3%95" target="_blank" rel="external">3、使用<code>@</code>字面量语法</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/4.%E5%A4%9A%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%B8%B8%E9%87%8F%EF%BC%8C%E5%B0%91%E7%94%A8%23define%E9%A2%84%E5%A4%84%E7%90%86%E6%8C%87%E4%BB%A4.md#%E5%A4%9A%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B0%91%E7%94%A8define%E9%A2%84%E5%A4%84%E7%90%86%E6%8C%87%E4%BB%A4" target="_blank" rel="external">4、如何使用宏define</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/5.%E7%94%A8%E6%9E%9A%E4%B8%BE%E8%A1%A8%E7%A4%BA%E7%8A%B6%E6%80%81%E3%80%81%E9%80%89%E9%A1%B9%E3%80%81%E7%8A%B6%E6%80%81%E7%A0%81.md#%E7%94%A8%E6%9E%9A%E4%B8%BE%E8%A1%A8%E7%A4%BA%E7%8A%B6%E6%80%81%E9%80%89%E9%A1%B9%E7%8A%B6%E6%80%81%E7%A0%81" target="_blank" rel="external">5、枚举</a></p>
+<h1 id="第二章-对象、消息、运行期"><a href="#第二章-对象、消息、运行期" class="headerlink" title="第二章 对象、消息、运行期"></a>第二章 对象、消息、运行期</h1><blockquote>
+<ol>
+<li>面向对象语言中，对象就是“基本构造单元”（building block），开发者通过对象来存储并传递数据。</li>
+<li>对象之间传递数据并执行任务的过程就是“消息传递”（messaging）</li>
+<li>运行期环境：就是开发者编写的代码，提供了一些使得对象之间能够传递消息的重要函数了，并且包含创建类实例所用的全部逻辑</li>
+</ol>
+</blockquote>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/6.%E7%90%86%E8%A7%A3%E2%80%9C%E5%B1%9E%E6%80%A7%E2%80%9D.md#%E7%90%86%E8%A7%A3%E5%B1%9E%E6%80%A7" target="_blank" rel="external">6、copy、strong属性</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/7.%E5%9C%A8%E5%AF%B9%E8%B1%A1%E5%86%85%E9%83%A8%E5%B0%BD%E9%87%8F%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F.md#%E5%9C%A8%E5%AF%B9%E8%B1%A1%E5%86%85%E9%83%A8%E5%B0%BD%E9%87%8F%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F" target="_blank" rel="external">7、<code>.</code>语法</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/8.%E7%90%86%E8%A7%A3%E5%AF%B9%E8%B1%A1%E7%AD%89%E5%90%8C%E6%80%A7.md#%E7%90%86%E8%A7%A3%E5%AF%B9%E8%B1%A1%E7%AD%89%E5%90%8C%E6%80%A7" target="_blank" rel="external">8、判断对象相等<code>=</code></a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/9.%E4%BB%A5%E7%B1%BB%E7%B0%87%E6%A8%A1%E5%BC%8F%E9%9A%90%E8%97%8F%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82.md#%E4%BB%A5%E7%B1%BB%E7%B0%87%E6%A8%A1%E5%BC%8F%E9%9A%90%E8%97%8F%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82" target="_blank" rel="external">9、类簇和工厂模式</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/10.%E5%9C%A8%E6%97%A2%E6%9C%89%E7%B1%BB%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E5%AD%98%E6%94%BE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE.md#%E5%9C%A8%E6%97%A2%E6%9C%89%E7%B1%BB%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E5%AD%98%E6%94%BE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE" target="_blank" rel="external">10、关联属性</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/11.%E7%90%86%E8%A7%A3objc_msgSend%E7%9A%84%E4%BD%9C%E7%94%A8.md#%E7%90%86%E8%A7%A3objc_msgsend%E7%9A%84%E4%BD%9C%E7%94%A8" target="_blank" rel="external">11、OC的消息发送</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/12.%E7%90%86%E8%A7%A3%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91%E6%9C%BA%E5%88%B6.md#%E7%90%86%E8%A7%A3%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91" target="_blank" rel="external">12、消息转发</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/13.%E7%94%A8%E6%96%B9%E6%B3%95%E8%B0%83%E9%85%8D%E6%8A%80%E6%9C%AF%E8%B0%83%E8%AF%95%E9%BB%91%E7%9B%92%E6%96%B9%E6%B3%95.md#%E7%94%A8%E6%96%B9%E6%B3%95%E8%B0%83%E9%85%8D%E6%8A%80%E6%9C%AF%E8%B0%83%E8%AF%95%E9%BB%91%E7%9B%92%E6%96%B9%E6%B3%95" target="_blank" rel="external">13、黑魔法method swizzling</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/14.%E7%90%86%E8%A7%A3%E7%B1%BB%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%94%A8%E6%84%8F.md#%E7%90%86%E8%A7%A3%E7%B1%BB%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%94%A8%E6%84%8F" target="_blank" rel="external">14、OC对象</a></p>
+<h1 id="第三章-接口与API设计"><a href="#第三章-接口与API设计" class="headerlink" title="第三章 接口与API设计"></a>第三章 接口与API设计</h1><blockquote>
+<p>如果要重用代码，就需要在编写接口的时候将其设计成易于复用的形式，包括命名、编码规范等。</p>
+</blockquote>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/15.%E7%94%A8%E5%89%8D%E7%BC%80%E9%81%BF%E5%85%8D%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%86%B2%E7%AA%81.md#%E7%94%A8%E5%89%8D%E7%BC%80%E9%81%BF%E5%85%8D%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%86%B2%E7%AA%81" target="_blank" rel="external">15、命名前缀</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/16.%E6%8F%90%E4%BE%9B%E5%85%A8%E8%83%BD%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E6%B3%95.md#%E6%8F%90%E4%BE%9B%E5%85%A8%E8%83%BD%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E6%B3%95" target="_blank" rel="external">16、init</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/17.%E5%AE%9E%E7%8E%B0description%E6%96%B9%E6%B3%95.md#%E5%AE%9E%E7%8E%B0description%E6%96%B9%E6%B3%95" target="_blank" rel="external">17、description</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/18.%E5%B0%BD%E9%87%8F%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1.md#%E5%B0%BD%E9%87%8F%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1" target="_blank" rel="external">18、readonly</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/19.%E4%BD%BF%E7%94%A8%E6%B8%85%E6%99%B0%E8%80%8C%E5%8D%8F%E8%B0%83%E7%9A%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F.md#%E4%BD%BF%E7%94%A8%E6%B8%85%E6%99%B0%E8%80%8C%E5%8D%8F%E8%B0%83%E7%9A%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F" target="_blank" rel="external">19、怎么起名字</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/20.%E4%B8%BA%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95%E5%90%8D%E5%8A%A0%E5%89%8D%E7%BC%80.md#%E4%B8%BA%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95%E5%90%8D%E5%8A%A0%E5%89%8D%E7%BC%80" target="_blank" rel="external">20、私有方法</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/21.%E7%90%86%E8%A7%A3Objective-C%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B.md#%E7%90%86%E8%A7%A3oc%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B" target="_blank" rel="external">21、异常和error</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/22.%E7%90%86%E8%A7%A3NSCoping%E5%8D%8F%E8%AE%AE.md#%E7%90%86%E8%A7%A3nscoping%E5%8D%8F%E8%AE%AE" target="_blank" rel="external">22、copy 是浅拷贝还是很拷贝</a></p>
+<h1 id="第四章-协议与分类"><a href="#第四章-协议与分类" class="headerlink" title="第四章 协议与分类"></a>第四章 协议与分类</h1><blockquote>
+<p>OC不支持多重继承（继承不同的类），因此我们把某个类应该实现的一系列方法定义在协议里面。<br>OC运行期系统是高度动态的，因此可以利用分类，无需继承子类即可直接为当前类添加方法。</p>
+</blockquote>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/23.%E9%80%9A%E8%BF%87%E5%A7%94%E6%89%98%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%BA%90%E5%8D%8F%E8%AE%AE%E8%BF%9B%E8%A1%8C%E5%AF%B9%E8%B1%A1%E9%97%B4%E9%80%9A%E4%BF%A1.md#%E9%80%9A%E8%BF%87%E5%A7%94%E6%89%98%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%BA%90%E5%8D%8F%E8%AE%AE%E8%BF%9B%E8%A1%8C%E5%AF%B9%E8%B1%A1%E9%97%B4%E9%80%9A%E4%BF%A1" target="_blank" rel="external">23、协议 delegate</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/24-27%E5%88%86%E7%B1%BB%E7%9A%84%E5%8A%9F%E8%83%BD.md#24-%E5%B0%86%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%88%86%E6%95%A3%E5%88%B0%E4%BE%BF%E4%BA%8E%E7%AE%A1%E7%90%86%E7%9A%84%E6%95%B0%E4%B8%AA%E5%88%86%E7%B1%BB%E4%B9%8B%E4%B8%AD" target="_blank" rel="external">24-27、用好分类category</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/28.%E9%80%9A%E8%BF%87%E5%8D%8F%E8%AE%AE%E6%8F%90%E4%BE%9B%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1.md#%E9%80%9A%E8%BF%87%E5%8D%8F%E8%AE%AE%E6%8F%90%E4%BE%9B%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1" target="_blank" rel="external">28、<code>id</code>匿名对象</a></p>
+<h1 id="第五章-内存管理"><a href="#第五章-内存管理" class="headerlink" title="第五章 内存管理"></a>第五章 内存管理</h1><p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/29%E3%80%8136.%E7%90%86%E8%A7%A3%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0.md#%E7%90%86%E8%A7%A3%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0" target="_blank" rel="external">29、36、向<code>retainCount</code>say NO</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/30.%E4%BB%A5ARC%E7%AE%80%E5%8C%96%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0.md#%E4%BB%A5arc%E7%AE%80%E5%8C%96%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0" target="_blank" rel="external">30、什么是ARC</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/31.%E5%9C%A8dealloc%E4%B8%AD%E5%8F%AA%E9%87%8A%E6%94%BE%E5%BC%95%E7%94%A8%E5%B9%B6%E8%A7%A3%E9%99%A4%E7%9B%91%E5%90%AC.md#%E5%9C%A8dealloc%E4%B8%AD%E5%8F%AA%E9%87%8A%E6%94%BE%E5%BC%95%E7%94%A8%E5%B9%B6%E8%A7%A3%E9%99%A4%E7%9B%91%E5%90%AC" target="_blank" rel="external">31、<code>dealloc</code>里面干什么</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/33.%E4%BB%A5%E5%BC%B1%E5%BC%95%E7%94%A8%E9%81%BF%E5%85%8D%E4%BF%9D%E7%95%99%E7%8E%AF.md#%E4%BB%A5%E5%BC%B1%E5%BC%95%E7%94%A8%E9%81%BF%E5%85%8D%E4%BF%9D%E7%95%99%E7%8E%AF" target="_blank" rel="external">33、循环引用的解决方案</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/34.%E4%BB%A5%E8%87%AA%E5%8A%A8%E9%87%8A%E6%94%BE%E6%B1%A0%E5%9D%97%E9%99%8D%E4%BD%8E%E5%86%85%E5%AD%98%E5%B3%B0%E5%80%BC.md#%E4%BB%A5%E8%87%AA%E5%8A%A8%E9%87%8A%E6%94%BE%E6%B1%A0%E9%99%8D%E4%BD%8E%E5%86%85%E5%AD%98%E5%B3%B0%E5%80%BC" target="_blank" rel="external">34、简单了解下@autoreleasepool</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/35.%E7%94%A8%E5%83%B5%E5%B0%B8%E5%AF%B9%E8%B1%A1%E8%B0%83%E8%AF%95%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E9%97%AE%E9%A2%98.md#%E7%94%A8%E5%83%B5%E5%B0%B8%E5%AF%B9%E8%B1%A1%E8%B0%83%E8%AF%95%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E9%97%AE%E9%A2%98" target="_blank" rel="external">35、僵尸对象到底是什么</a></p>
+<h1 id="第六章-块与大中枢派发"><a href="#第六章-块与大中枢派发" class="headerlink" title="第六章 块与大中枢派发"></a>第六章 块与大中枢派发</h1><blockquote>
+<ul>
+<li>块（block）是一种可在C、C++及OC代码中使用的词法闭包，借由块，开发者可将代码像对象一样传递。</li>
+<li>GCD提供了对线程的抽象，这种抽象基于“派发队列”（dispatch queue）。GCD会根据系统资源情况，适时地创建、复用、摧毁后台线程，以便处理每个队列。</li>
+</ul>
+</blockquote>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/37.%E7%90%86%E8%A7%A3%E5%9D%97%E7%9A%84%E6%A6%82%E5%BF%B5.md#%E7%90%86%E8%A7%A3%E5%9D%97%E7%9A%84%E6%A6%82%E5%BF%B5" target="_blank" rel="external">37、block概念</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/38.%E4%B8%BA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9D%97%E7%B1%BB%E5%9E%8B%E5%88%9B%E5%BB%BAtypedef.md#%E4%B8%BA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9D%97%E7%B1%BB%E5%9E%8B%E5%88%9B%E5%BB%BAtypedef" target="_blank" rel="external">38、声明block</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/39.%E7%94%A8handler%E5%9D%97%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%88%86%E6%95%A3%E7%A8%8B%E5%BA%A6.md#%E7%94%A8handler%E5%9D%97%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%88%86%E6%95%A3%E7%A8%8B%E5%BA%A6" target="_blank" rel="external">39、block or delegate</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/41.%E5%A4%9A%E7%94%A8%E6%B4%BE%E5%8F%91%E9%98%9F%E5%88%97%EF%BC%8C%E5%B0%91%E7%94%A8%E5%90%8C%E6%AD%A5%E9%94%81.md#%E5%A4%9A%E7%94%A8%E6%B4%BE%E5%8F%91%E9%98%9F%E5%88%97%E5%B0%91%E7%94%A8%E5%90%8C%E6%AD%A5%E9%94%81" target="_blank" rel="external">41、iOS中的锁</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/42.%E5%A4%9A%E7%94%A8GCD%EF%BC%8C%E5%B0%91%E7%94%A8performSelector%E7%B3%BB%E5%88%97%E6%96%B9%E6%B3%95.md#%E5%A4%9A%E7%94%A8gcd%E5%B0%91%E7%94%A8performselector%E7%B3%BB%E5%88%97%E6%96%B9%E6%B3%95" target="_blank" rel="external">42、GCD 取代 performSelector
+</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/43.%E6%8E%8C%E6%8F%A1GCD%E5%8F%8A%E6%93%8D%E4%BD%9C%E9%98%9F%E5%88%97%E7%9A%84%E4%BD%BF%E7%94%A8%E6%97%B6%E6%9C%BA.md#%E6%8E%8C%E6%8F%A1gcd%E5%8F%8A%E6%93%8D%E4%BD%9C%E9%98%9F%E5%88%97%E7%9A%84%E4%BD%BF%E7%94%A8%E6%97%B6%E6%9C%BA" target="_blank" rel="external">43、NSOperation</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/44.%E9%80%9A%E8%BF%87Dispatch%20Group%20%E6%9C%BA%E5%88%B6%EF%BC%8C%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%8A%B6%E5%86%B5%E6%9D%A5%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1.md#%E9%80%9A%E8%BF%87dispatch-group%E6%9C%BA%E5%88%B6%E6%A0%B9%E6%8D%AE%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%8A%B6%E5%86%B5%E6%9D%A5%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1" target="_blank" rel="external">44、dispatch group 的方法简介</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/45.%E4%BD%BF%E7%94%A8dispatch_once%E6%9D%A5%E6%89%A7%E8%A1%8C%E5%8F%AA%E9%9C%80%E8%BF%90%E8%A1%8C%E4%B8%80%E6%AC%A1%E7%9A%84%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E4%BB%A3%E7%A0%81.md#%E4%BD%BF%E7%94%A8dispatch_once%E6%9D%A5%E6%89%A7%E8%A1%8C%E5%8F%AA%E9%9C%80%E8%BF%90%E8%A1%8C%E4%B8%80%E6%AC%A1%E7%9A%84%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E4%BB%A3%E7%A0%81" target="_blank" rel="external">45、dispatch_once 实现单例</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/46.%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8dispatch_get_current_queue.md#%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8dispatch_get_current_queue" target="_blank" rel="external">46、废弃的dispatch_get_current_queue
+</a></p>
+<h1 id="第七章-系统框架"><a href="#第七章-系统框架" class="headerlink" title="第七章 系统框架"></a>第七章 系统框架</h1><blockquote>
+<p>只要编写OC代码，就离不开系统框架</p>
+</blockquote>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/47.%E7%86%9F%E6%82%89%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6.md#%E7%86%9F%E6%82%89%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6" target="_blank" rel="external">47、熟悉系统框架</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/48.%E5%A4%9A%E7%94%A8%E5%9D%97%E6%9E%9A%E4%B8%BE%EF%BC%8C%E5%B0%91%E7%94%A8for%E5%BE%AA%E7%8E%AF.md#%E5%A4%9A%E7%94%A8%E5%9D%97%E6%9E%9A%E4%B8%BE%E5%B0%91%E7%94%A8for%E5%BE%AA%E7%8E%AF" target="_blank" rel="external">48、四个遍历方法</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/49.%E5%AF%B9%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%B6%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E8%AF%AD%E4%B9%89%E7%9A%84collection%E4%BD%BF%E7%94%A8%E6%97%A0%E7%BC%9D%E6%A1%A5%E6%8E%A5.md#%E5%AF%B9%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%B6%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E8%AF%AD%E4%B9%89%E7%9A%84collection%E4%BD%BF%E7%94%A8%E6%97%A0%E7%BC%9D%E6%A1%A5%E6%8E%A5" target="_blank" rel="external">49、使用__bridge无缝桥接</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/50.%E6%9E%84%E5%BB%BA%E7%BC%93%E5%AD%98%E6%97%B6%E9%80%89%E7%94%A8NSCache%E8%80%8C%E9%9D%9ENSDictionary.md#%E6%9E%84%E5%BB%BA%E7%BC%93%E5%AD%98%E6%97%B6%E9%80%89%E7%94%A8nscache%E8%80%8C%E9%9D%9Ensdictionary" target="_blank" rel="external">50、缓存NSCache</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/51.%E7%B2%BE%E7%AE%80initialize%E4%B8%8Eload%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81.md#%E7%B2%BE%E7%AE%80initialize%E4%B8%8Eload%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81" target="_blank" rel="external">51、你应该了解的initialize与load</a></p>
+<p><a href="https://github.com/LionWY/Read_Notes/blob/master/Effective%20Objective-C%202.0%20%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FiOS%E4%B8%8EOS%20X%E4%BB%A3%E7%A0%81%E7%9A%8452%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95/52.%E5%88%AB%E5%BF%98%E4%BA%86NSTimer%E4%BC%9A%E4%BF%9D%E7%95%99%E5%85%B6%E7%9B%AE%E6%A0%87%E5%AF%B9%E8%B1%A1.md#%E5%88%AB%E5%BF%98%E4%BA%86nstimer%E4%BC%9A%E4%BF%9D%E7%95%99%E5%85%B6%E7%9B%AE%E6%A0%87%E5%AF%B9%E8%B1%A1" target="_blank" rel="external">52、NSTimer的小知识</a></p>
+<p>[终]</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/读书学习/" rel="tag">#读书学习</a>
+          
+            <a href="/tags/OC原理/" rel="tag">#OC原理</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Hexo常用命令/" rel="next" title="Hexo 常用命令">
+                <i class="fa fa-chevron-left"></i> Hexo 常用命令
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/图片加载之AFNetwork（上）/" rel="prev" title="图片加载之AFNetwork（上）">
+                图片加载之AFNetwork（上） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="记录Effective Objective-C 2.0 笔记/"
+           data-title="记录Effective Objective-C 2.0 笔记目录" data-url="http://lionwy.github.io/记录Effective Objective-C 2.0 笔记/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://oc164vmyr.bkt.clouddn.com/16-8-17/94370674.jpg"
+               alt="Lion_Liu" />
+          <p class="site-author-name" itemprop="name">Lion_Liu</p>
+          <p class="site-description motion-element" itemprop="description">学而时习之，温故而知新。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/LionWY" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1897101841/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/7f5c3fe78dc7/latest_articles" target="_blank" title="Jianshu">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  Jianshu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-熟悉Objective-C"><span class="nav-text">第一章 熟悉Objective-C</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-对象、消息、运行期"><span class="nav-text">第二章 对象、消息、运行期</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-接口与API设计"><span class="nav-text">第三章 接口与API设计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-协议与分类"><span class="nav-text">第四章 协议与分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五章-内存管理"><span class="nav-text">第五章 内存管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第六章-块与大中枢派发"><span class="nav-text">第六章 块与大中枢派发</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第七章-系统框架"><span class="nav-text">第七章 系统框架</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lion_Liu</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lion-liu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("6Q4uagm9w9gGiumDdQ8CIYQB-gzGzoHsz", "XcDkKeNKrUKEzd9vD778hsIE");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            // $visitors.find(COUNT_CONTAINER_REF).text(0);
+            $visitors.find(COUNT_CONTAINER_REF).text(0+"°C");
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            // $(element).find(COUNT_CONTAINER_REF).text(time);
+            $(element).find(COUNT_CONTAINER_REF).text(time+"°C");
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              // countSpan.text(0);
+              countSpan.text(0+"°C");
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                // $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                $element.find('.leancloud-visitors-count').text(counter.get('time')+"°C");
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                // $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time')+"°C");
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+  <!-- <script type="text/javascript" src="/js/src/test.js"></script> -->
+
+</body>
+</html>
