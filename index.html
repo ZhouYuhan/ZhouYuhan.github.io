@@ -357,22 +357,14 @@
 
       
         
-          
-            <h1 id="iOS-Jenkins自动化打包-1"><a href="#iOS-Jenkins自动化打包-1" class="headerlink" title="iOS Jenkins自动化打包(1)"></a>iOS Jenkins自动化打包(1)</h1><p>在配置 jenkins的时候遇到了很多坑,在此记录下大家可能会遇到的问题,也记录下自己的配置过程,以免遗忘</p>
-<h1 id="首先第一步应该是配置-JAVA-环境"><a href="#首先第一步应该是配置-JAVA-环境" class="headerlink" title="首先第一步应该是配置 JAVA 环境"></a><em>首先第一步应该是配置 JAVA 环境</em></h1><p>Mac 环境下配置应该先配置 JAVA,如果已经配置了的可以跳过该步骤</p>
-<ul>
-<li>先去 <a href="http://www.oracle.com/" target="_blank" rel="external">Oracle | Integrated Cloud Applications and Platform Services</a>下载 最新的 JDK  (部分需要安装 JDK8 而不是10的版本的请专门搜索Java SE Development Kit 8 下载)</li>
-<li>下载安装完成后配置环境变量,如果你是第一次配置环境变量，可以使用“touch .bash_profile” 创建一个.bash_profile的隐藏配置文件(如果你是为编辑已存在的配置文件，则使用”open -e .bash_profile”命令)<br>在编辑器里输入<br>JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home<br>PATH=$JAVA_HOME/bin:$PATH:.<br>CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.<br>export JAVA_HOME<br>export PATH<br>export CLASSPATH<br>其中jdk1.8.0_40.jdk换为自己版本的名字,可以在/Library/Java/JavaVirtualMachines中查看<br>保存文件后终端输入”source .bash_profile”使配置生效，然后输入”java -version”，如果看到jdk版本为1.8则说明配置已经生效</li>
-</ul>
-<p>[image:AF27B328-EFA5-4601-B0A1-E33A7B2A79B0-37447-0000FA2A485480E4/F4104E78-97BA-4081-8DA2-FCA9ECA3A3FF.png]</p>
-<ul>
-<li>终端输入 jenkins 启动可能会遇到以下报错<br>[image:818755D4-90B9-40BD-9D2B-358B3475B103-37447-0000FAB530D4029B/C3F6BF59-A8C5-444D-9240-3AB6A15A530D.png]</li>
-<li>去 jenkins 官网下载.war 包<br>终端再次输入执行命令(需要在.war 所在的目录位置执行)  java -jar jenkins.war 还是有几率会遇到上面的报错<br>这时候我们需要更改端口号,因为默认的8080已经被占用<br>终端输入java -jar jenkins.war –httpPort=1080运行 jerkins</li>
-</ul>
-<p>[image:8B1F2A1B-8ED0-4580-8214-1F3131D3467E-37447-0000FAFCC0BC56C7/2E104426-3019-46E4-A3D2-AA346C4ABC5E.png]<br>这时候就启动成功了,进入如下界面</p>
-<p>[image:FC427EEE-507E-4503-AD0E-A9DE98F90A6E-37447-0000FB0C6DE525B1/3F58DAAE-7457-4BD6-B550-1A5E3555EB8F.png]</p>
-
-          
+          <h1 id="iOS-Jenkins自动化打包-1"><a href="#iOS-Jenkins自动化打包-1" class="headerlink" title="iOS Jenkins自动化打包(1)"></a>iOS Jenkins自动化打包(1)</h1><p>在配置 jenkins的时候遇到了很多坑,在此记录下大家可能会遇到的问题,也记录下自己的配置过程,以免遗忘<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/29/iOS-Jenkins自动打包/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
