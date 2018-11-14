@@ -1548,7 +1548,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/05/vim-的操作/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/05/iOS 打包分发快车道fastlane/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhou Yuhan">
@@ -1570,8 +1570,8 @@
             
               
                 
-                <a class="post-title-link" href="/2017/03/05/vim-的操作/" itemprop="url">
-                  vim 的操作
+                <a class="post-title-link" href="/2017/03/05/iOS 打包分发快车道fastlane/" itemprop="url">
+                  未命名
                 </a>
               
             
@@ -1587,7 +1587,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T23:05:03+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T23:05:04+08:00">
                 2017-03-05
               </time>
             
@@ -1606,8 +1606,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/05/vim-的操作/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/05/vim-的操作/" itemprop="commentCount"></span>
+                <a href="/2017/03/05/iOS 打包分发快车道fastlane/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/05/iOS 打包分发快车道fastlane/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1615,7 +1615,7 @@
 
           
           
-             <span id="/2017/03/05/vim-的操作/" class="leancloud_visitors" data-flag-title="vim 的操作">
+             <span id="/2017/03/05/iOS 打包分发快车道fastlane/" class="leancloud_visitors" data-flag-title="">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1645,15 +1645,18 @@
 
       
         
-          <h2 id="vim-的操作"><a href="#vim-的操作" class="headerlink" title="vim 的操作"></a>vim 的操作</h2><p>先做简单的记录<br>H -&gt; J -&gt; K -&gt; L  依次为 左 -&gt; 下-&gt; 上 -&gt; 右  (当然也可以使用上下左右键, 看自己的习惯)</p>
-<h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><p>首先, vim 存在三种模式, 分别是普通模式, 插入模式, 和视图模式<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/05/vim-的操作/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <p><img src="https://upload-images.jianshu.io/upload_images/2043407-0dc3b0a26454578c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="fastlane"></p>
+<blockquote>
+<p>fastlane is the easiest way to automate beta deployments and releases for your iOS and Android apps. 🚀 It handles all tedious tasks, like generating screenshots, dealing with code signing, and releasing your application.</p>
+</blockquote>
+<p>#一、安装xcode命令行工具<br><figure class="highlight plain"><figcaption><span>--install```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#二、安装Fastlane</div><div class="line">*终端运行---&gt;*</div><div class="line">```sudo gem install fastlane -NV</div></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight plain"><figcaption><span>cask install fastlane```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#三、初始化Fastlane</div><div class="line">*cd到项目根目录并运行---&gt;*</div><div class="line">```fastlane init</div></pre></td></tr></table></figure></p>
+<p>运行后按照提示选择下去,中间会让你输入苹果的帐号,输入后一段时间会提示successful</p>
+<p>#编辑Fastfile<br>fastlane初始化成功后项目根目录会多出falstlane文件夹<br><img src="https://upload-images.jianshu.io/upload_images/2043407-dd517599d87d2827.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>这时我们编辑里面的Fastfile<br><img src="https://upload-images.jianshu.io/upload_images/2043407-8597898153281873.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>每一个lane相当于一个方法,lane则为定义方法的关键字, 后面为方法名类似的起名规则<br><strong>这里我定义了两个lane, 一个是上传TestFlight用的, 一个是因为自己项目的原因上传FTP用的, ftp的上传需要安装fastlane的插件, 这里可以终端运行</strong><br><figure class="highlight plain"><figcaption><span>add_plugin ftp```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">######build_app内参数说明</div><div class="line">- increment_build_number 可以每次打包的时候加build号</div><div class="line">- export_method 可以自行定义为ad-hoc development app-store 等</div><div class="line">- configuration 可以设置Debug或Release</div><div class="line">- export_xcargs 设置为-allowProvisioningUpdates意思为允许自动管理证书,不设置的话需要配置provisioningfile</div><div class="line">![image.png](https://upload-images.jianshu.io/upload_images/2043407-97cff66658ce7552.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">#运行Fastlane</div><div class="line">尝试运行刚才添加的两个方法其中之一的beta</div><div class="line">```fastlane beta</div></pre></td></tr></table></figure></p>
+<p>运行后,有报错的话,可以尝试修改<br><img src="https://upload-images.jianshu.io/upload_images/2043407-a4d4a963b695cfb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>再次运行fastlane beta,大功告成</p>
+
+          
         
       
     </div>
@@ -1732,7 +1735,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
